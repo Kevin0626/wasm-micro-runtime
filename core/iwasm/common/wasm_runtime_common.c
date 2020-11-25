@@ -781,7 +781,7 @@ wasm_runtime_deinstantiate_internal(WASMModuleInstanceCommon *module_inst,
 void
 wasm_runtime_deinstantiate(WASMModuleInstanceCommon *module_inst)
 {
-    return wasm_runtime_deinstantiate_internal(module_inst, false);
+    wasm_runtime_deinstantiate_internal(module_inst, false);
 }
 
 WASMExecEnv *

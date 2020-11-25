@@ -686,7 +686,7 @@ free_wrapper(wasm_exec_env_t exec_env, void *ptr)
     if (!validate_native_addr(ptr, sizeof(uint32)))
         return;
 
-    return module_free(addr_native_to_app(ptr));
+    module_free(addr_native_to_app(ptr));
 }
 
 static int32
